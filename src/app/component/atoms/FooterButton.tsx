@@ -10,7 +10,7 @@ export default function FooterButton({ text }: LinkProps) {
   return (
     <Link
       href="/"
-      className="flex items-center font-outfitRegular border-b border-foreground w-fit md:text-xl lg:text-2xl">
+      className="flex items-center font-outfitMedium text-accent-2 border-b-2 border-accent-2 w-fit md:text-xl lg:text-2xl">
       {text}
       <MdArrowOutward className="text-lg ml-2" />
     </Link>
