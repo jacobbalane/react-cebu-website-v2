@@ -6,15 +6,17 @@ export default function Footer() {
   return (
     <footer className="bg-accent-1">
       <div className="relative overflow-hidden ">
-        <div className="lg:h-50rem flex items-center px-8 py-16 md:max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
-          <div className="overflow-hidden flex flex-col w-full space-y-12">
-            <p className="text-4xl md:text-6xl font-outfitBold z-10">
-              Stay Connected <br className="md:hidden" /> with Us!
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular  text-accent-2 z-10 md:w-1/2">
-              Follow us on social media for the latest updates, events, and
-              community highlights.
-            </p>
+        <div className="lg:h-50rem flex items-center px-8 py-12 md:max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
+          <div className="overflow-hidden flex flex-col w-full space-y-10 z-10">
+            <div className="flex flex-col space-y-4 md:space-y-10">
+              <p className="text-4xl md:text-6xl font-outfitBold z-10">
+                Stay Connected <br className="md:hidden" /> with Us!
+              </p>
+              <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular  text-accent-2 z-10 md:w-1/2">
+                Follow us on social media for the latest updates, events, and
+                community highlights.
+              </p>
+            </div>
             <FooterLinks />
             <div className="md:hidden">
               <Socials />

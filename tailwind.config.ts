@@ -23,9 +23,8 @@ const config: Config = {
         outfitBold: "var(--font-outfit-bold)",
       },
       height: {
-        footerH: "calc(100vh - 6rem)",
-        fullH: "calc(100svh - 9rem)",
-        heroH: "calc(100svh - 6rem)",
+        sectionTabletHeight: "calc(100svh - 9rem)",
+        sectionMobileHeight: "calc(100svh - 6rem)",
         "50rem": "50rem",
       },
       maxWidth: {
