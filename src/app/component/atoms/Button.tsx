@@ -13,7 +13,7 @@ export default function Button({ text, accent }: ButtonProps) {
       href="/"
       className={`flex justify-center items-center z-10 px-8 py-3 rounded-md font-outfitMedium lg:text-lg ${
         accent
-          ? "text-foreground bg-accent-1 border-2 border-foreground"
+          ? "text-accent-2 bg-accent-1 border-2 border-foreground"
           : "text-background bg-foreground"
       }`}>
       {text}

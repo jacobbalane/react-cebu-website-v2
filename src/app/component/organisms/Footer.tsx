@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="text-4xl md:text-6xl font-outfitBold z-10">
               Stay Connected <br className="md:hidden" /> with Us!
             </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular z-10 md:w-1/2">
+            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular  text-accent-2 z-10 md:w-1/2">
               Follow us on social media for the latest updates, events, and
               community highlights.
             </p>

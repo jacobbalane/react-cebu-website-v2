@@ -13,7 +13,7 @@ export default function Hero() {
             <p className="text-4xl md:text-6xl lg:text-8xl font-outfitBold text-center">
               Meet and collab with other React developers in Cebu
             </p>
-            <p className="font-outfitRegular text-xl md:text-2xl lg:text-4xl md:text-center">
+            <p className="font-outfitRegular text-xl md:text-2xl lg:text-4xl text-center">
               React Cebu is a community for developers by developers
             </p>
             <div className="flex flex-col md:flex-row md:justify-center space-y-3 md:space-y-0 md:space-x-3">
