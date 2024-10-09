@@ -1,13 +1,12 @@
-import './styles/global.css';
-import Header from './component/Header';
-import Hero from './component/Hero';
-import Footer from './component/Footer'
+import Header from "@/app/component/organisms/Header";
+import Hero from "@/app/component/organisms/Hero";
+import Footer from "@/app/component/organisms/Footer";
 export default function Home() {
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <Footer/>
+    <div className="">
+      <Header />
+      <Hero />
+      <Footer />
     </div>
   );
 }
