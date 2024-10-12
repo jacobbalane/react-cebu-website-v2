@@ -4,7 +4,7 @@ import Socials from "../molecules/Socials";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-accent-1 h-smallFooterScreen md:h-largeScreen">
+    <footer className="flex flex-col bg-accent-1 md:h-largeScreen">
       <div className="grow relative overflow-hidden ">
         <div className="lg:h-full flex items-center px-8 py-12 md:max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
           <div className="overflow-hidden flex flex-col w-full space-y-10 z-10">
