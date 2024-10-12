@@ -21,3 +21,19 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes logo-slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@layer components {
+  .logo-slide {
+    animation: logo-slide 15s linear infinite;
+  }
+}

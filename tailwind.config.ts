@@ -11,6 +11,9 @@ const config: Config = {
       animation: {
         "spin-slow": "spin 10s linear infinite",
       },
+      backgroundImage: {
+        "support-background": "/src/assets/images/group-cutout.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -23,8 +26,9 @@ const config: Config = {
         outfitBold: "var(--font-outfit-bold)",
       },
       height: {
-        sectionTabletHeight: "calc(100svh - 9rem)",
-        sectionMobileHeight: "calc(100svh - 6rem)",
+        largeScreen: "calc(100svh - 9rem)",
+        smallScreen: "calc(100svh - 6rem)",
+        smallFooterScreen: "calc(100vh - 6rem)",
         "50rem": "50rem",
       },
       maxWidth: {

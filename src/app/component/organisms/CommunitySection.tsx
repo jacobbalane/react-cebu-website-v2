@@ -16,10 +16,10 @@ export default function CommunitySection() {
           />{" "}
           <div className="flex flex-col md:w-1/2 space-y-8 md:space-y-20">
             <div className="flex flex-col space-y-4 md:space-y-10">
-              <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold text-center md:text-left">
+              <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold">
                 Join Our Growing Community
               </p>
-              <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular text-center md:text-left">
+              <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular">
                 Be a part of something bigger. Together, we create, inspire, and
                 make an impact.
               </p>

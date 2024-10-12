@@ -7,7 +7,7 @@ import reactIcon from "@/assets/images/react-icon.png";
 export default function Hero() {
   return (
     <section className="relative flex justify-center overflow-hidden">
-      <div className="relative flex flex-col items-center bg-background h-sectionMobileHeight md:h-sectionTabletHeight max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
+      <div className="relative flex flex-col items-center bg-background h-smallScreen md:h-largeScreen max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
         <div className="flex items-center h-3/5 min-h-fit p-8  z-30">
           <div className="min-h-60 flex flex-col justify-center space-y-8 md:space-y-12">
             <p className="text-4xl md:text-6xl lg:text-7xl font-outfitBold text-center">
