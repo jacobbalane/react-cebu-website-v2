@@ -6,7 +6,7 @@ interface SectionLayoutProps {
 
 export default function SectionLayout({ children }: SectionLayoutProps) {
   return (
-    <section className="bg-background p-8 md:h-sectionTabletHeight max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
+    <section className="bg-background md:h-largeScreen max-w-mdMaxW lg:max-w-lgMaxW mx-auto px-8 py-16">
       {children}
     </section>
   );
