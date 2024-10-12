@@ -28,7 +28,6 @@ const config: Config = {
       height: {
         largeScreen: "calc(100svh - 9rem)",
         smallScreen: "calc(100svh - 6rem)",
-        smallFooterScreen: "calc(100vh - 6rem)",
         "50rem": "50rem",
       },
       maxWidth: {
