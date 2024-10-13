@@ -21,7 +21,9 @@ export default function MobileMenu() {
             </Link>
           ))}
         </div>
-        <Button text="Support Us" menu={true} />
+        <button onClick={hideMenu}>
+          <Button text="Support Us" link="/connect" menu={true} />
+        </button>
       </div>
     </div>
   );

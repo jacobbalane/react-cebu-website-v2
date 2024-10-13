@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../atoms/Button";
 
 import communityImage from "@/assets/images/landing-community.png";
-import SectionLayout from "../template/SectionLayout";
+import SectionLayout from "../layouts/SectionLayout";
 
 export default function CommunitySection() {
   return (
@@ -25,7 +25,7 @@ export default function CommunitySection() {
               </p>
             </div>
             <div className="w-full md:w-fit">
-              <Button text="Be a Reactor today" accent={true} />
+              <Button text="Be a Reactor today" link="/about" accent={true} />
             </div>
           </div>
         </div>

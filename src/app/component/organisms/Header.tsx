@@ -22,7 +22,12 @@ export default function Header() {
       <div className="flex justify-between items-center h-24 md:h-36 md:max-w-mdMaxW lg:max-w-lgMaxW px-8 mx-auto">
         {/* Logo on the Left */}
         <Link href="/">
-          <Image src={logo} alt="Logo" className="w-10 md:w-16" />
+          <Image
+            src={logo}
+            alt="Logo"
+            className="w-10 md:w-16"
+            priority={true}
+          />
         </Link>
 
         {/* Centered Links */}
@@ -39,7 +44,7 @@ export default function Header() {
 
         {/* Support Us Button on the Right */}
         <div className="hidden md:block">
-          <Button text="Support Us" />
+          <Button text="Support Us" link="/connect" />
         </div>
         <RxHamburgerMenu
           className="md:hidden text-3xl show-menu-icon"
