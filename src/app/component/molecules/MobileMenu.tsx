@@ -10,6 +10,11 @@ interface MobileMenuProps {
 export default function MobileMenu({ isToggled, toggleMenu }: MobileMenuProps) {
   const links = ["Home", "About", "Events", "Connect"];
 
+  function handleToggleMenu() {
+    document.body.classList.remove("overflow-hidden");
+    toggleMenu();
+  }
+
   return (
     <div
       className={` ${
@@ -22,10 +27,9 @@ export default function MobileMenu({ isToggled, toggleMenu }: MobileMenuProps) {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              toggleMenu();
-              window.location.href = `/`;
+              handleToggleMenu();
             }}>
-            <button>{link}</button>
+            {link}
           </Link>
         ))}
       </div>
