@@ -24,7 +24,7 @@ export default function Hero() {
                 className="
                lg:w-96 z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg"
               />
-              <Button text="Join Newsletter" accent={true} />
+              <Button text="Join Newsletter" link="/" accent={true} />
             </div>
           </div>
         </div>
@@ -33,6 +33,7 @@ export default function Hero() {
         src={groupCutout}
         alt="group photo"
         className="absolute bottom-0 z-20"
+        priority={true}
       />
       <Image
         src={reactIcon}
