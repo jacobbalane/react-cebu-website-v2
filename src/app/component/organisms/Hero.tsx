@@ -33,6 +33,7 @@ export default function Hero() {
         src={groupCutout}
         alt="group photo"
         className="absolute bottom-0 z-20"
+        priority={true}
       />
       <Image
         src={reactIcon}

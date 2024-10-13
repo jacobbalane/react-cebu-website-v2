@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./component/organisms/Header";
+import Footer from "./component/organisms/Footer";
+import MobileMenu from "./component/molecules/MobileMenu";
 
 const outfitRegular = localFont({
   src: "./fonts/Outfit-Regular.ttf",
@@ -29,8 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfitRegular.variable} ${outfitMedium.variable} ${outfitBold.variable} antialiased`}>
-        {children}
+        className={`${outfitRegular.variable} ${outfitMedium.variable} ${outfitBold.variable} antialiased relative md:overflow-y-auto`}>
+        <Header />
+        <main className="flex flex-col">{children}</main>
+        <Footer />
+        <MobileMenu />
       </body>
     </html>
   );

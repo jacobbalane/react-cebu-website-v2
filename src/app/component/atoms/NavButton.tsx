@@ -6,7 +6,9 @@ interface NavButtonProps {
 
 export default function NavButton({ text }: NavButtonProps) {
   return (
-    <Link href="/#" className="font-outfitRegular lg:text-lg">
+    <Link
+      href={text === "home" ? "/" : `/${text}`}
+      className="font-outfitRegular lg:text-lg capitalize nav-button">
       {text}
     </Link>
   );

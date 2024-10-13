@@ -16,6 +16,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.active {
+  font-weight: bold;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
