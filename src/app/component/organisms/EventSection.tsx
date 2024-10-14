@@ -9,6 +9,7 @@ export default function SupportSection() {
       <Image
         src={image}
         alt="Support background"
+        priority={true}
         className="absolute bottom-0 object-cover h-full w-full opacity-10"
       />
       <SectionLayout>

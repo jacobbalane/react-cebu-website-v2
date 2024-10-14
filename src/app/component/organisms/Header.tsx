@@ -25,8 +25,8 @@ export default function Header() {
           <Image
             src={logo}
             alt="Logo"
-            className="w-10 md:w-16"
             priority={true}
+            className="w-10 md:w-16"
           />
         </Link>
 

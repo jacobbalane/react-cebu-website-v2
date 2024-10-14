@@ -32,12 +32,14 @@ export default function Hero() {
       <Image
         src={groupCutout}
         alt="group photo"
-        className="absolute bottom-0 z-20"
         priority={true}
+        className="absolute bottom-0 z-20"
       />
       <Image
         src={reactIcon}
         alt="react icon"
+        placeholder="blur"
+        priority={true}
         className="absolute -bottom-14 md:-bottom-40 lg:-bottom-1/3 z-0 w-2/3 xl:w-7/12 opacity-10 animate-spin-slow"
       />
     </section>
