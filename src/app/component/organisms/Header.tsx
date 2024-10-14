@@ -25,8 +25,8 @@ export default function Header() {
           <Image
             src={logo}
             alt="Logo"
-            className="w-10 md:w-16"
             priority={true}
+            className="w-10 md:w-16"
           />
         </Link>
 
@@ -44,7 +44,7 @@ export default function Header() {
 
         {/* Support Us Button on the Right */}
         <div className="hidden md:block">
-          <Button text="Support Us" link="/connect" />
+          <Button text="Support Us" link="connect" />
         </div>
         <RxHamburgerMenu
           className="md:hidden text-3xl show-menu-icon"

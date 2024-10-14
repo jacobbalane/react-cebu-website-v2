@@ -30,7 +30,7 @@ export default function Events() {
         title="Get in Touch"
         description="We’d love to hear from you! Reach out for inquiries, support, or collaboration."
         buttonText="Go to Connect Page"
-        linkTo="/connect"
+        linkTo="connect"
       />
     </>
   );

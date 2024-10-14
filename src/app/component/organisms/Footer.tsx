@@ -1,22 +1,20 @@
 import FooterLinks from "../molecules/FooterLinks";
 import { FaReact } from "react-icons/fa";
 import Socials from "../molecules/Socials";
+import Copyright from "../molecules/Copyright";
+import SectionText from "../atoms/SectionText";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col bg-accent-1 md:h-largeScreen">
-      <div className="grow relative overflow-hidden ">
+      <div className="grow relative overflow-hidden" id="footer-info">
         <div className="lg:h-full flex items-center px-8 py-12 md:max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
           <div className="overflow-hidden flex flex-col w-full space-y-10 z-10">
-            <div className="flex flex-col space-y-4 md:space-y-10">
-              <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold z-10">
-                Stay Connected <br className="md:hidden" /> with Us!
-              </p>
-              <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular  text-accent-2 z-10 md:w-1/2">
-                Follow us on social media for the latest updates, events, and
-                community highlights.
-              </p>
-            </div>
+            <SectionText
+              title="Stay Connected with Us!"
+              description="Follow us on social media for the latest updates, events, and community highlights."
+              limitDescriptionWidth={true}
+            />
             <FooterLinks />
             <div className="md:hidden">
               <Socials />
@@ -25,16 +23,7 @@ export default function Footer() {
         </div>
         <FaReact className="absolute -bottom-24 md:-bottom-52 lg:-bottom-[18rem] -right-36 md:-right-44 lg:-right-[20rem] text-[25rem] md:text-[40rem] lg:text-[65rem] text-background" />
       </div>
-      <div className="bg-foreground flex-none">
-        <div className="h-32 lg:h-40 flex justify-between px-8 items-center md:max-w-mdMaxW lg:max-w-lgMaxW mx-auto">
-          <p className="text-background text-sm lg:text-base font-outfitRegular">
-            Copyright 2024 © React Cebu. All rights reserved.
-          </p>
-          <div className="hidden md:block">
-            <Socials />
-          </div>
-        </div>
-      </div>
+      <Copyright />
     </footer>
   );
 }
