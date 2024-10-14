@@ -1,31 +1,62 @@
+import Image from "next/image";
 import SectionLayout from "../component/layouts/SectionLayout";
 import CallToAction from "../component/molecules/CallToAction";
+
+import HeroSectionImage from "@/assets/images/about-hero.jpg";
+import AboutInfoSection from "../component/molecules/AboutInfoSection";
+
+import MissionImage from "@/assets/images/about-our-mission.jpg";
+import DeveloperImage1 from "@/assets/images/about-developer-growth-1.jpg";
+import DeveloperImage2 from "@/assets/images/about-developer-growth-2.jpg";
+import CutoutImage from "@/assets/images/group-cutout.png";
+
+import SectionText from "../component/atoms/SectionText";
 
 export default function About() {
   return (
     <>
-      <SectionLayout>
-        <div className="flex items-center h-full">
-          <div className="flex flex-col space-y-4 md:space-y-10 justify-center items-center md:pb-36">
-            <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold md:text-center">
-              About Page Coming Soon...
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular md:text-center md:w-3/5">
-              We’re working on something exciting! While we prepare, check out
-              our{" "}
-              <span className="font-outfitMedium text-accent-1">
-                <a
-                  href="https://www.facebook.com/reactcebu/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Facebook page
-                </a>
-              </span>{" "}
-              for the latest updates and upcoming events.
-            </p>
-          </div>
+      <SectionLayout fitHeight={true} reducePaddingY={true}>
+        <div className="flex flex-col space-y-8 md:space-y-20 w-full">
+          <p className="flex-none text-3xl md:text-5xl lg:text-7xl font-outfitBold">
+            <span className="text-accent-1">React Cebu</span> — a community for
+            developers by developers
+          </p>
+          <Image
+            src={HeroSectionImage}
+            alt="Community Group Photo"
+            priority={true}
+            className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover"
+          />
         </div>
       </SectionLayout>
+      <AboutInfoSection
+        title="Our Mission"
+        description="At React Cebu, we aim to promote React JS and JavaScript technologies by hosting free meetups, workshops, code camps, and training sessions. Our goal is to build a friendly, inclusive space where members can connect and grow."
+        images={MissionImage}
+      />
+      <AboutInfoSection
+        title="Supporting Developer Growth"
+        description="Through free learning, knowledge sharing, and collaboration, we strive to empower developers and foster cutting-edge talent in Cebu City."
+        images={[DeveloperImage1, DeveloperImage2]}
+        multipleImages={true}
+      />
+      <SectionLayout
+        removeDefaultPaddingY={true}
+        fitHeight={true}
+        reducePaddingY={true}>
+        <SectionText
+          title="The Power of Community"
+          description="We believe in the importance of community—finding your tribe to support, grow, and learn together. That’s what React Cebu is all about."
+          alignCenterOnLargeScreen={true}
+        />
+      </SectionLayout>
+
+      <Image
+        src={CutoutImage}
+        alt="Community Group Photo"
+        priority={true}
+        className="w-full md:mt-40"
+      />
       <CallToAction
         title="Upcoming Events"
         description="Join us for our latest events and activities. Stay connected and engaged!"

@@ -1,28 +1,25 @@
 import SectionLayout from "../layouts/SectionLayout";
 import Button from "../atoms/Button";
 import Image from "next/image";
-import image from "@/assets/images/support-background.jpg";
+import image from "@/assets/images/event-background.jpg";
+import SectionText from "../atoms/SectionText";
 
-export default function SupportSection() {
+export default function EventSection() {
   return (
     <div className="relative overflow-hidden">
       <Image
         src={image}
-        alt="Support background"
+        alt="Event Section Background"
         priority={true}
         className="absolute bottom-0 object-cover h-full w-full opacity-10"
       />
       <SectionLayout>
         <div className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10">
-          <div className="flex flex-col space-y-4 md:space-y-10">
-            <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold md:text-center">
-              Join Us at Our Upcoming Events
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular md:text-center">
-              Join us as we bring passion to every event. Connect, learn, and
-              grow with us.
-            </p>
-          </div>
+          <SectionText
+            title="Join Us at Our Upcoming Events"
+            description="Join us as we bring passion to every event. Connect, learn, and grow with us."
+            alignCenterOnLargeScreen={true}
+          />
           <div className="w-full md:w-fit">
             <Button text="Discover Our Events" link="events" accent={true} />
           </div>
