@@ -1,6 +1,6 @@
 import Hero from "./component/organisms/Hero";
-import CommunitySection from "./component/organisms/CommunitySection";
-import SupportSection from "./component/organisms/SupportSection";
+import AboutSection from "./component/organisms/AboutSection";
+import EventSection from "./component/organisms/EventSection";
 import ImageSlider from "./component/organisms/ImageSlider";
 import CallToAction from "./component/molecules/CallToAction";
 
@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <CommunitySection />
+      <AboutSection />
       <ImageSlider />
-      <SupportSection />
+      <EventSection />
       <CallToAction
         title="Discover More About Us"
         description="Learn about our mission, goal, and the community we are building."
         buttonText="Go to About Page"
-        linkTo="/about"
+        linkTo="about"
       />
     </>
   );

@@ -30,7 +30,7 @@ export default function About() {
         title="Upcoming Events"
         description="Join us for our latest events and activities. Stay connected and engaged!"
         buttonText="Go to Events Page"
-        linkTo="/events"
+        linkTo="events"
       />
     </>
   );

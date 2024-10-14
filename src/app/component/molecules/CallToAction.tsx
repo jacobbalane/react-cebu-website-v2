@@ -19,10 +19,10 @@ export default function CallToAction({
     <SectionLayout fitHeight={true}>
       <div className="flex flex-col justify-center items-center space-y-8 md:space-y-20 h-full w-full">
         <div className="flex flex-col md:items-center space-y-4 md:space-y-10">
-          <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold">
+          <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold md:text-center">
             {title}
           </p>
-          <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular">
+          <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular md:text-center">
             {description}
           </p>
         </div>

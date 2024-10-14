@@ -33,3 +33,18 @@ export function hideMenu() {
   body.classList.remove("overflow-hidden");
   body.classList.add("overflow-y-auto");
 }
+
+export function hideFooterInfo() {
+  const footerInfo = document.getElementById("footer-info");
+  footerInfo.parentElement?.classList.remove("md:h-largeScreen");
+  footerInfo?.classList.remove("block");
+  footerInfo?.classList.add("hidden");
+}
+
+export function showFooterInfo() {
+  const footerInfo = document.getElementById("footer-info");
+  footerInfo.parentElement?.classList.add("md:h-largeScreen");
+  console.log(footerInfo);
+  footerInfo?.classList.remove("hidden");
+  footerInfo?.classList.add("block");
+}

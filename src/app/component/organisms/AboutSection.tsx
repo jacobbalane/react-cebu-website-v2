@@ -25,7 +25,7 @@ export default function CommunitySection() {
               </p>
             </div>
             <div className="w-full md:w-fit">
-              <Button text="Be a Reactor today" link="/about" accent={true} />
+              <Button text="Be a Reactor today" link="about" accent={true} />
             </div>
           </div>
         </div>
