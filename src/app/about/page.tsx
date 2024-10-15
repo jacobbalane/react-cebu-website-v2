@@ -24,6 +24,7 @@ export default function About() {
           <Image
             src={HeroSectionImage}
             alt="Community Group Photo"
+            loading="lazy"
             priority={true}
             className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover"
           />

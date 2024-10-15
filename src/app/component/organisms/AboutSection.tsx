@@ -14,6 +14,7 @@ export default function CommunitySection() {
             src={communityImage}
             alt="Growing Community Image"
             className="md:w-1/2 md:ml-4 lg:ml-8"
+            priority={true}
           />{" "}
           <div className="flex flex-col md:w-1/2 space-y-8 md:space-y-20">
             <SectionText

@@ -38,6 +38,7 @@ export default function AboutInfoSection({
                 key={image.src}
                 src={image}
                 alt="Community Group Photo"
+                loading="lazy"
                 className={`h-60 md:h-72 md:w-4/5 rounded-md border-2 border-foreground object-cover md:absolute  ${
                   index === images.length - 1
                     ? "hidden md:block top-0 right-0"
@@ -49,6 +50,7 @@ export default function AboutInfoSection({
             <Image
               src={images}
               alt="Community Group Photo"
+              loading="lazy"
               className="h-60 md:h-full w-full rounded-md border-2 border-foreground object-cover"
             />
           )}
