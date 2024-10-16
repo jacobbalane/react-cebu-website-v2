@@ -21,13 +21,8 @@ export default function Header() {
     <header className="sticky w-full top-0 z-50 bg-background">
       <div className="flex justify-between items-center h-24 md:h-36 md:max-w-mdMaxW lg:max-w-lgMaxW px-8 mx-auto">
         {/* Logo on the Left */}
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="Logo"
-            priority={true}
-            className="w-10 md:w-16"
-          />
+        <Link href="/" className="md:w-52">
+          <Image src={logo} alt="Logo" priority={true} className="w-10" />
         </Link>
 
         {/* Centered Links */}
@@ -43,7 +38,7 @@ export default function Header() {
         </nav>
 
         {/* Support Us Button on the Right */}
-        <div className="hidden md:block">
+        <div className="hidden md:block md:w-52">
           <Button text="Support Us" link="connect" />
         </div>
         <RxHamburgerMenu

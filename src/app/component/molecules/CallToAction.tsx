@@ -24,7 +24,7 @@ export default function CallToAction({
           description={description}
           alignCenterOnLargeScreen={true}
         />
-        <div className="w-full md:w-80">
+        <div className="w-full md:w-80 flex justify-center">
           <Button text={buttonText} link={linkTo} />
         </div>
       </div>

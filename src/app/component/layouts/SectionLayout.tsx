@@ -16,7 +16,9 @@ export default function SectionLayout({
   return (
     <section
       className={`bg-background ${
-        fitHeight ? "h-fit md:py-40" : "h-smallScreen md:h-largeScreen"
+        fitHeight
+          ? "h-fit md:py-40"
+          : "h-smallScreen md:h-largeScreen min-h-smallScreen"
       }  max-w-mdMaxW lg:max-w-lgMaxW md:mx-auto px-8 ${
         removeDefaultPaddingY ? "" : "py-16"
       } ${reducePaddingY ? "py-12 md:py-32" : ""}`}>

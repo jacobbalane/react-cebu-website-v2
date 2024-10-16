@@ -22,9 +22,11 @@ export default function Hero() {
                 type="text"
                 placeholder="Your Email Address"
                 className="
-               lg:w-96 z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg"
+               lg:w-96 z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg md:w-2/3"
               />
-              <Button text="Join Newsletter" link="home" accent={true} />
+              <div className="md:1/3">
+                <Button text="Join Newsletter" link="home" accent={true} />
+              </div>
             </div>
           </div>
         </div>
