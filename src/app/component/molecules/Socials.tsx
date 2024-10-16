@@ -9,7 +9,7 @@ export default function Socials({ invertColor }: SocialsProps) {
   return (
     <div
       className={`flex items-center space-x-1 text-4xl ${
-        !invertColor ? "text-background" : " md:text-5xl"
+        !invertColor ? "md:text-background" : " md:text-5xl"
       } z-10`}>
       <a
         href="https://medium.com/react-cebu"
