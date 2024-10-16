@@ -38,7 +38,7 @@ export default function Header() {
         </nav>
 
         {/* Support Us Button on the Right */}
-        <div className="hidden md:block bg-yellow-200 md:w-52 ">
+        <div className="hidden md:block md:w-52">
           <Button text="Support Us" link="connect" />
         </div>
         <RxHamburgerMenu
