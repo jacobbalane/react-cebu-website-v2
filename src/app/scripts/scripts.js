@@ -44,7 +44,6 @@ export function hideFooterInfo() {
 export function showFooterInfo() {
   const footerInfo = document.getElementById("footer-info");
   footerInfo.parentElement?.classList.add("md:h-largeScreen");
-  console.log(footerInfo);
   footerInfo?.classList.remove("hidden");
   footerInfo?.classList.add("block");
 }

@@ -12,7 +12,7 @@ export default function Connect() {
     <>
       <div className="relative overflow-hidden w-full h-fit flex justify-center">
         <SectionLayout removeDefaultPaddingY={true}>
-          <div className=" flex flex-col items-center md:justify-center h-full space-y-14 md:space-y-20 min-h-fit pt-12 md:pt-32">
+          <div className=" flex flex-col items-center md:justify-center h-full space-y-14 md:space-y-20 min-h-fit pt-12 md:pt-40">
             <div className="flex flex-col items-center space-y-8 md:space-y-12">
               <div className="flex-none h-fit md:max-w-[55rem]">
                 <SectionText
