@@ -1,31 +1,62 @@
+import Image from "next/image";
+import Button from "../component/atoms/Button";
+import SectionText from "../component/atoms/SectionText";
 import SectionLayout from "../component/layouts/SectionLayout";
 import CallToAction from "../component/molecules/CallToAction";
+import { MdArrowOutward } from "react-icons/md";
+import reactIcon from "@/assets/images/react-icon.png";
+import Socials from "../component/molecules/Socials";
 
 export default function Connect() {
   return (
     <>
-      <SectionLayout>
-        <div className="flex items-center h-full">
-          <div className="flex flex-col space-y-4 md:space-y-10 justify-center items-center md:pb-36">
-            <p className="text-3xl md:text-5xl lg:text-7xl font-outfitBold md:text-center">
-              Connect Page Coming Soon...
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-outfitRegular md:text-center md:w-3/5">
-              We’re working on something exciting! While we prepare, check out
-              our{" "}
-              <span className="font-outfitMedium text-accent-1">
-                <a
-                  href="https://www.facebook.com/reactcebu/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Facebook page
-                </a>
-              </span>{" "}
-              for the latest updates and upcoming events.
-            </p>
+      <div className="relative overflow-hidden w-full h-fit flex justify-center">
+        <SectionLayout removeDefaultPaddingY={true}>
+          <div className=" flex flex-col items-center md:justify-center h-full space-y-14 md:space-y-20 min-h-fit pt-12 md:pt-32">
+            <div className="flex flex-col items-center space-y-8 md:space-y-12">
+              <div className="flex-none h-fit md:max-w-[55rem]">
+                <SectionText
+                  title="Let’s Connect"
+                  description="Have questions or ideas? Reach out, and let's connect to explore how we can collaborate and create something great together!"
+                  alignCenterOnSmallScreen={true}
+                />
+              </div>
+              <div className="flex-none w-full h-fit max-w-[40rem]">
+                <div className="w-full flex flex-col space-y-3">
+                  <input
+                    type="text"
+                    placeholder="Your Email Address"
+                    className="md:w-full z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg"
+                  />
+                  <div className="w-full flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+                    <div className="md:w-1/2">
+                      <Button text="Join Newsletter" link="/" />
+                    </div>
+                    <a
+                      href="mailto: react@jscebu.org"
+                      className="md:w-1/2 flex justify-center items-center z-10 px-8 py-3 rounded-md font-outfitMedium md:text-xl lg:text-2xl text-accent-2 bg-accent-1 border-2 border-foreground">
+                      Send us an email
+                      <MdArrowOutward className=" text-lg ml-2" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grow flex flex-col items-center w-full space-y-3 md:space-y-5 min-h-40">
+              <p className="font-outfitMedium md:text-2xl">
+                Follow or contact us on our social media
+              </p>
+              <Socials invertColor={true} />
+            </div>
           </div>
-        </div>
-      </SectionLayout>
+        </SectionLayout>
+        <Image
+          src={reactIcon}
+          alt="react icon"
+          priority={true}
+          className="absolute -bottom-40 md:-bottom-72 lg:-bottom-[20rem] z-0 w-4/5 lg:w-3/5 opacity-10 animate-spin-slow"
+        />
+      </div>
       <CallToAction
         title="Return to the Home Page"
         description="You’ve explored our site—now head back to the beginning to discover even more!"

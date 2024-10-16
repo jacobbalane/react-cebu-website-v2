@@ -25,7 +25,6 @@ export default function Images() {
           src={image.image}
           alt={image.alt}
           loading="lazy"
-          priority={true}
           className="h-40 max-w-28 md:h-full md:max-w-[30rem] rounded-md object-cover"
         />
       ))}

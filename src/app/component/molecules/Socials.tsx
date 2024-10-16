@@ -1,9 +1,16 @@
 import { AiFillMediumCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 
-export default function Socials() {
+interface SocialsProps {
+  readonly invertColor?: boolean;
+}
+
+export default function Socials({ invertColor }: SocialsProps) {
   return (
-    <div className="flex items-center space-x-1 text-4xl md:text-background z-10">
+    <div
+      className={`flex items-center space-x-1 text-4xl ${
+        !invertColor ? "text-background" : " md:text-5xl"
+      } z-10`}>
       <a
         href="https://medium.com/react-cebu"
         target="_blank"
