@@ -37,9 +37,9 @@ export default function Header() {
         <nav className="hidden md:flex space-x-4">
           {navButtons.map((button, index) => (
             <React.Fragment key={button}>
-              <NavButton text={button} />
+              <NavButton text={button} index={index} />
               {index !== navButtons.length - 1 && (
-                <BsDot className="text-2xl" />
+                <BsDot className="text-2xl text-accent-3" />
               )}
             </React.Fragment>
           ))}

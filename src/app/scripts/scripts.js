@@ -47,3 +47,30 @@ export function showFooterInfo() {
   footerInfo?.classList.remove("hidden");
   footerInfo?.classList.add("block");
 }
+
+export function setActiveNavButton(index) {
+  const navButtons = document.querySelectorAll(".nav-button");
+  navButtons.forEach((button) => {
+    button.classList.remove("active");
+    button.classList.add("text-accent-3");
+  });
+  navButtons[index].classList.add("active");
+
+  const menuButtons = document.querySelectorAll(".menu-button");
+  menuButtons.forEach((button) => {
+    button.classList.remove("active");
+    button.classList.add("text-accent-3");
+  });
+  menuButtons[index].classList.add("active");
+
+  localStorage.setItem("activeNavIndex", index);
+}
+
+export function highlightLastActiveButtons() {
+  const lastActiveIndex = localStorage.getItem("activeNavIndex");
+  if (lastActiveIndex !== null) {
+    setActiveNavButton(parseInt(lastActiveIndex, 10));
+  } else {
+    setActiveNavButton(0);
+  }
+}

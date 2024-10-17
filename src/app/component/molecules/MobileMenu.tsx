@@ -4,14 +4,16 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-// Importing React
-import React from "react";
+// Importing React and useEffect hook
+import React, { useEffect } from "react";
 
 // Importing custom scripts
 import {
   hideMenu,
   showFooterInfo,
   hideFooterInfo,
+  setActiveNavButton,
+  highlightLastActiveButtons,
 } from "@/app/scripts/scripts";
 
 // Importing atom components
@@ -21,11 +23,16 @@ export default function MobileMenu() {
   const links = ["home", "about", "events", "connect"];
   const router = useRouter();
 
+  useEffect(() => {
+    highlightLastActiveButtons();
+  }, []);
+
   function handleClick(
     e:
       | React.MouseEvent<HTMLAnchorElement>
       | React.MouseEvent<HTMLButtonElement>,
-    text: string
+    text: string,
+    index?: number
   ) {
     e.preventDefault();
     if (text === "connect") {
@@ -34,14 +41,19 @@ export default function MobileMenu() {
       showFooterInfo();
     }
     hideMenu();
+    setActiveNavButton(index);
     router.push(text === "home" ? "/" : `/${text}`);
   }
   return (
     <div id="menu" className="hidden md:hidden fixed top-0 z-40">
       <div className="flex flex-col justify-center bg-background fixed h-screen w-full space-y-10 px-8 py-24">
-        <div className="flex flex-col items-center text-2xl font-outfitMedium capitalize w-full space-y-4">
-          {links.map((link) => (
-            <Link key={link} href="/" onClick={(e) => handleClick(e, link)}>
+        <div className="flex flex-col items-center text-2xl font-outfitRegular capitalize w-full space-y-4">
+          {links.map((link, index) => (
+            <Link
+              key={link}
+              href="/"
+              onClick={(e) => handleClick(e, link, index)}
+              className="menu-button">
               {link}
             </Link>
           ))}

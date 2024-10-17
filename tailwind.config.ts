@@ -19,6 +19,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         "accent-1": "var(--accent-1)",
         "accent-2": "var(--accent-2)",
+        "accent-3": "var(--accent-3)",
       },
       fontFamily: {
         outfitRegular: "var(--font-outfit-regular)",
