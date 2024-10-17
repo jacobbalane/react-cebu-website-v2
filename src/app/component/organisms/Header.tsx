@@ -9,7 +9,7 @@ import { showMenu, hideMenu } from "@/app/scripts/scripts";
 import Button from "../atoms/Button";
 import NavButton from "../atoms/NavButton";
 
-import logo from "@/assets/logo/react-cebu-logo.png";
+import logo from "@/assets/logo/react-cebu-logo.webp";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";

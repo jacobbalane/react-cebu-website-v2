@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import Button from "../atoms/Button";
-import groupCutout from "@/assets/images/group-cutout.png";
-import reactIcon from "@/assets/images/react-icon.png";
+import groupCutout from "@/assets/images/group-cutout.webp";
+import reactIcon from "@/assets/images/react-icon.webp";
 import SectionText from "../atoms/SectionText";
 
 export default function Hero() {

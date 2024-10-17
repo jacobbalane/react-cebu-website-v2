@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../atoms/Button";
 
-import communityImage from "@/assets/images/landing-community.png";
+import communityImage from "@/assets/images/landing-community.webp";
 import SectionLayout from "../layouts/SectionLayout";
 import SectionText from "../atoms/SectionText";
 

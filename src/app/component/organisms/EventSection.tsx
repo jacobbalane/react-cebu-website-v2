@@ -1,7 +1,7 @@
 import SectionLayout from "../layouts/SectionLayout";
 import Button from "../atoms/Button";
 import Image from "next/image";
-import image from "@/assets/images/event-background.jpg";
+import image from "@/assets/images/event-background.webp";
 import SectionText from "../atoms/SectionText";
 
 export default function EventSection() {

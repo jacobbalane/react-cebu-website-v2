@@ -4,7 +4,7 @@ import SectionText from "../component/atoms/SectionText";
 import SectionLayout from "../component/layouts/SectionLayout";
 import CallToAction from "../component/molecules/CallToAction";
 import { MdArrowOutward } from "react-icons/md";
-import reactIcon from "@/assets/images/react-icon.png";
+import reactIcon from "@/assets/images/react-icon.webp";
 import Socials from "../component/molecules/Socials";
 
 export default function Connect() {

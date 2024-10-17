@@ -2,13 +2,13 @@ import Image from "next/image";
 import SectionLayout from "../component/layouts/SectionLayout";
 import CallToAction from "../component/molecules/CallToAction";
 
-import HeroSectionImage from "@/assets/images/about-hero.jpg";
+import HeroSectionImage from "@/assets/images/about-hero.webp";
 import AboutInfoSection from "../component/molecules/AboutInfoSection";
 
-import MissionImage from "@/assets/images/about-our-mission.jpg";
-import DeveloperImage1 from "@/assets/images/about-developer-growth-1.jpg";
-import DeveloperImage2 from "@/assets/images/about-developer-growth-2.jpg";
-import CutoutImage from "@/assets/images/group-cutout.png";
+import MissionImage from "@/assets/images/about-our-mission.webp";
+import DeveloperImage1 from "@/assets/images/about-developer-growth-1.webp";
+import DeveloperImage2 from "@/assets/images/about-developer-growth-2.webp";
+import CutoutImage from "@/assets/images/group-cutout.webp";
 
 import SectionText from "../component/atoms/SectionText";
 
