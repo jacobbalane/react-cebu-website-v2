@@ -1,3 +1,4 @@
+// Importing social media icons
 import { AiFillMediumCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 

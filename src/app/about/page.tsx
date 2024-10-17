@@ -1,16 +1,22 @@
+// Importing Next.js components
 import Image from "next/image";
-import SectionLayout from "../component/layouts/SectionLayout";
-import CallToAction from "../component/molecules/CallToAction";
 
-import HeroSectionImage from "@/assets/images/about-hero.jpg";
+// Importing layout component
+import SectionLayout from "../component/layouts/SectionLayout";
+
+// Importing molecule components
+import CallToAction from "../component/molecules/CallToAction";
 import AboutInfoSection from "../component/molecules/AboutInfoSection";
 
-import MissionImage from "@/assets/images/about-our-mission.jpg";
-import DeveloperImage1 from "@/assets/images/about-developer-growth-1.jpg";
-import DeveloperImage2 from "@/assets/images/about-developer-growth-2.jpg";
-import CutoutImage from "@/assets/images/group-cutout.png";
-
+// Importing atom component
 import SectionText from "../component/atoms/SectionText";
+
+// Importing images
+import HeroSectionImage from "@/assets/images/about-hero.webp";
+import MissionImage from "@/assets/images/about-our-mission.webp";
+import DeveloperImage1 from "@/assets/images/about-developer-growth-1.webp";
+import DeveloperImage2 from "@/assets/images/about-developer-growth-2.webp";
+import CutoutImage from "@/assets/images/group-cutout.webp";
 
 export default function About() {
   return (
@@ -25,7 +31,7 @@ export default function About() {
             src={HeroSectionImage}
             alt="Community Group Photo"
             priority={true}
-            className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover"
+            className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover select-none"
           />
         </div>
       </SectionLayout>
@@ -40,28 +46,31 @@ export default function About() {
         images={[DeveloperImage1, DeveloperImage2]}
         multipleImages={true}
       />
-      <SectionLayout
-        removeDefaultPaddingY={true}
-        fitHeight={true}
-        reducePaddingY={true}>
-        <SectionText
-          title="The Power of Community"
-          description="We believe in the importance of community—finding your tribe to support, grow, and learn together. That’s what React Cebu is all about."
-          alignCenterOnLargeScreen={true}
-        />
-      </SectionLayout>
+      <div data-aos="fade">
+        <SectionLayout
+          removeDefaultPaddingY={true}
+          fitHeight={true}
+          reducePaddingY={true}>
+          <SectionText
+            title="The Power of Community"
+            description="We believe in the importance of community—finding your tribe to support, grow, and learn together. That’s what React Cebu is all about."
+            alignCenterOnLargeScreen={true}
+          />
+        </SectionLayout>
+      </div>
 
       <Image
         src={CutoutImage}
         alt="Community Group Photo"
         priority={true}
-        className="w-full md:mt-40"
+        className="w-full md:mt-40 select-none"
       />
       <CallToAction
         title="Upcoming Events"
         description="Join us for our latest events and activities. Stay connected and engaged!"
         buttonText="Go to Events Page"
         linkTo="events"
+        index={2}
       />
     </>
   );

@@ -1,12 +1,14 @@
+// Importing React and Next.js components
 import React from "react";
 import Image from "next/image";
 
-import image1 from "@/assets/images/landing-group-1.jpg";
-import image2 from "@/assets/images/landing-group-2.jpg";
-import image3 from "@/assets/images/landing-group-3.jpg";
-import image4 from "@/assets/images/landing-group-4.jpg";
-import image5 from "@/assets/images/landing-group-5.jpg";
-import image6 from "@/assets/images/landing-group-6.jpg";
+// Importing images
+import image1 from "@/assets/images/landing-group-1.webp";
+import image2 from "@/assets/images/landing-group-2.webp";
+import image3 from "@/assets/images/landing-group-3.webp";
+import image4 from "@/assets/images/landing-group-4.webp";
+import image5 from "@/assets/images/landing-group-5.webp";
+import image6 from "@/assets/images/landing-group-6.webp";
 
 export default function Images() {
   const images = [
@@ -25,7 +27,7 @@ export default function Images() {
           src={image.image}
           alt={image.alt}
           loading="lazy"
-          className="h-40 max-w-28 md:h-full md:max-w-[30rem] rounded-md object-cover"
+          className="h-40 max-w-28 md:h-full md:max-w-[30rem] rounded-md object-cover select-none"
         />
       ))}
     </>

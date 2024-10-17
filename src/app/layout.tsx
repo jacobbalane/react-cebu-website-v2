@@ -1,8 +1,23 @@
+// Importing Next.js types
 import type { Metadata } from "next";
+
+// Importing Next.js font
 import localFont from "next/font/local";
+
+// Importing Next.js Script component
+import Script from "next/script";
+
+// Importing global styles
 import "./globals.css";
+
+// Importing AOSInitializer component
+import AOSInitializer from "./utils/AOSInitializer";
+
+// Importing organism components
 import Header from "./component/organisms/Header";
 import Footer from "./component/organisms/Footer";
+
+// Importing molecule components
 import MobileMenu from "./component/molecules/MobileMenu";
 
 const outfitRegular = localFont({
@@ -26,13 +41,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  readonly children: React.ReactNode;
+}) {
   return (
     <html lang="en">
+      <Script
+        src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+        strategy="afterInteractive"
+      />
       <body
         className={`${outfitRegular.variable} ${outfitMedium.variable} ${outfitBold.variable} antialiased relative md:overflow-y-auto`}>
+        <AOSInitializer />
         <Header />
         <main className="flex flex-col">{children}</main>
         <Footer />

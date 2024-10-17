@@ -1,8 +1,15 @@
-import SectionLayout from "../layouts/SectionLayout";
-import Button from "../atoms/Button";
+// Importing Next.js components
 import Image from "next/image";
-import image from "@/assets/images/event-background.jpg";
+
+// Importing atom components
+import Button from "../atoms/Button";
 import SectionText from "../atoms/SectionText";
+
+// Importing layout component
+import SectionLayout from "../layouts/SectionLayout";
+
+// Importing images
+import image from "@/assets/images/event-background.webp";
 
 export default function EventSection() {
   return (
@@ -11,17 +18,24 @@ export default function EventSection() {
         src={image}
         alt="Event Section Background"
         priority={true}
-        className="absolute bottom-0 object-cover h-full w-full opacity-10"
+        className="absolute bottom-0 object-cover h-full w-full opacity-10 select-none"
       />
       <SectionLayout>
-        <div className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10">
+        <div
+          className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10"
+          data-aos="fade-up">
           <SectionText
             title="Join Us at Our Upcoming Events"
             description="Join us as we bring passion to every event. Connect, learn, and grow with us."
             alignCenterOnLargeScreen={true}
           />
           <div className="w-full md:w-fit">
-            <Button text="Discover Our Events" link="events" accent={true} />
+            <Button
+              text="Discover Our Events"
+              link="events"
+              accent={true}
+              index={2}
+            />
           </div>
         </div>
       </SectionLayout>

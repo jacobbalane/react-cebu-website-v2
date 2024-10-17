@@ -1,5 +1,10 @@
+// Importing React
 import React from "react";
+
+// Importing from layouts
 import SectionLayout from "../layouts/SectionLayout";
+
+// Importing from atoms
 import Button from "../atoms/Button";
 import SectionText from "../atoms/SectionText";
 
@@ -8,6 +13,7 @@ interface CallToActionProps {
   readonly description: string;
   readonly buttonText: string;
   readonly linkTo: string;
+  readonly index?: number;
 }
 
 export default function CallToAction({
@@ -15,6 +21,7 @@ export default function CallToAction({
   description,
   buttonText,
   linkTo,
+  index = 0,
 }: CallToActionProps) {
   return (
     <SectionLayout fitHeight={true}>
@@ -25,7 +32,7 @@ export default function CallToAction({
           alignCenterOnLargeScreen={true}
         />
         <div className="w-full md:w-80 flex justify-center">
-          <Button text={buttonText} link={linkTo} />
+          <Button text={buttonText} link={linkTo} index={index} />
         </div>
       </div>
     </SectionLayout>

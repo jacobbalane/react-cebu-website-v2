@@ -1,8 +1,13 @@
-import FooterLinks from "../molecules/FooterLinks";
+// Importing icon components
 import { FaReact } from "react-icons/fa";
+
+// Importing atom components
+import SectionText from "../atoms/SectionText";
+
+// Importing molecule components
+import FooterLinks from "../molecules/FooterLinks";
 import Socials from "../molecules/Socials";
 import Copyright from "../molecules/Copyright";
-import SectionText from "../atoms/SectionText";
 
 export default function Footer() {
   return (
