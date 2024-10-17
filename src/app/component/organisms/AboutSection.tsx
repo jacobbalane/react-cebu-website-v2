@@ -42,7 +42,12 @@ export default function CommunitySection() {
               description="Be a part of something bigger. Together, we create, inspire, and make an impact."
             />
             <div className="w-full md:w-fit">
-              <Button text="Be a Reactor today" link="about" accent={true} />
+              <Button
+                text="Be a Reactor today"
+                link="about"
+                accent={true}
+                index={1}
+              />
             </div>
           </div>
         </div>

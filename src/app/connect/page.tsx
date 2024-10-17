@@ -73,6 +73,7 @@ export default function Connect() {
         description="You’ve explored our site—now head back to the beginning to discover even more!"
         buttonText="Go to Home Page"
         linkTo="/"
+        index={0}
       />
     </>
   );

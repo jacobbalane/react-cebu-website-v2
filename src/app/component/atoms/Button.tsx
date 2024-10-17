@@ -8,16 +8,27 @@ import { useRouter } from "next/navigation";
 import { MdArrowOutward } from "react-icons/md";
 
 // Importing custom scripts
-import { showFooterInfo, hideFooterInfo } from "@/app/scripts/scripts";
+import {
+  showFooterInfo,
+  hideFooterInfo,
+  setActiveNavButton,
+} from "@/app/scripts/scripts";
 
 interface ButtonProps {
   readonly text: string;
   readonly link: string;
   readonly accent?: boolean;
   readonly menu?: boolean;
+  readonly index?: number;
 }
 
-export default function Button({ text, link, accent, menu }: ButtonProps) {
+export default function Button({
+  text,
+  link,
+  accent,
+  menu,
+  index = 0,
+}: ButtonProps) {
   const router = useRouter();
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>, text: string) {
@@ -27,6 +38,7 @@ export default function Button({ text, link, accent, menu }: ButtonProps) {
     } else {
       showFooterInfo();
     }
+    setActiveNavButton(index);
     router.push(text === "home" ? "/" : `/${text}`);
   }
 

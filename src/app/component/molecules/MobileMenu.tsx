@@ -68,7 +68,7 @@ export default function MobileMenu() {
             </Link>
           ))}
         </div>
-        <button onClick={(e) => handleClick(e, "connect")}>
+        <button onClick={(e) => handleClick(e, "connect", 3)}>
           <Button text="Support Us" link="connect" menu={true} />
         </button>
       </div>

@@ -30,7 +30,12 @@ export default function EventSection() {
             alignCenterOnLargeScreen={true}
           />
           <div className="w-full md:w-fit">
-            <Button text="Discover Our Events" link="events" accent={true} />
+            <Button
+              text="Discover Our Events"
+              link="events"
+              accent={true}
+              index={2}
+            />
           </div>
         </div>
       </SectionLayout>

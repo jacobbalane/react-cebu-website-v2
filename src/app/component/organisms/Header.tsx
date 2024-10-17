@@ -52,7 +52,7 @@ export default function Header() {
 
         {/* Support Us Button on the Right */}
         <div className="hidden md:block md:w-52">
-          <Button text="Support Us" link="connect" />
+          <Button text="Support Us" link="connect" index={3} />
         </div>
         <RxHamburgerMenu
           className="md:hidden text-3xl show-menu-icon"

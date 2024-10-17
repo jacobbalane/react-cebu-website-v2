@@ -49,21 +49,23 @@ export function showFooterInfo() {
 }
 
 export function setActiveNavButton(index) {
-  const navButtons = document.querySelectorAll(".nav-button");
-  navButtons.forEach((button) => {
-    button.classList.remove("active");
-    button.classList.add("text-accent-3");
-  });
-  navButtons[index].classList.add("active");
+  if (!undefined) {
+    const navButtons = document.querySelectorAll(".nav-button");
+    navButtons.forEach((button) => {
+      button.classList.remove("active");
+      button.classList.add("text-accent-3");
+    });
+    navButtons[index].classList.add("active");
 
-  const menuButtons = document.querySelectorAll(".menu-button");
-  menuButtons.forEach((button) => {
-    button.classList.remove("active");
-    button.classList.add("text-accent-3");
-  });
-  menuButtons[index].classList.add("active");
+    const menuButtons = document.querySelectorAll(".menu-button");
+    menuButtons.forEach((button) => {
+      button.classList.remove("active");
+      button.classList.add("text-accent-3");
+    });
+    menuButtons[index].classList.add("active");
 
-  localStorage.setItem("activeNavIndex", index);
+    localStorage.setItem("activeNavIndex", index);
+  }
 }
 
 export function highlightLastActiveButtons() {

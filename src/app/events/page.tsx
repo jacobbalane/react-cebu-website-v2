@@ -34,6 +34,7 @@ export default function Events() {
         description="We’d love to hear from you! Reach out for inquiries, support, or collaboration."
         buttonText="Go to Connect Page"
         linkTo="connect"
+        index={3}
       />
     </>
   );

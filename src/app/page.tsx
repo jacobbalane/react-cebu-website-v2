@@ -19,6 +19,7 @@ export default function Home() {
         description="Learn about our mission, goal, and the community we are building."
         buttonText="Go to About Page"
         linkTo="about"
+        index={1}
       />
     </>
   );
