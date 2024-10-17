@@ -1,9 +1,13 @@
+// Importing Next.js components
 import Image from "next/image";
 
+// Importing atom components
 import Button from "../atoms/Button";
+import SectionText from "../atoms/SectionText";
+
+// Importing images
 import groupCutout from "@/assets/images/group-cutout.webp";
 import reactIcon from "@/assets/images/react-icon.webp";
-import SectionText from "../atoms/SectionText";
 
 export default function Hero() {
   return (

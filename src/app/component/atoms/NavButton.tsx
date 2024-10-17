@@ -1,6 +1,8 @@
+// Importing Next.js components
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+// Importing custom scripts
 import { showFooterInfo, hideFooterInfo } from "@/app/scripts/scripts";
 
 interface NavButtonProps {

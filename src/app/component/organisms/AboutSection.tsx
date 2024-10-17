@@ -1,9 +1,18 @@
+// Importing Next.js components
 import Image from "next/image";
-import Button from "../atoms/Button";
 
-import communityImage from "@/assets/images/landing-community.webp";
-import SectionLayout from "../layouts/SectionLayout";
+// Importing React
+import React from "react";
+
+// Importing atom components
+import Button from "../atoms/Button";
 import SectionText from "../atoms/SectionText";
+
+// Importing layout component
+import SectionLayout from "../layouts/SectionLayout";
+
+// Importing images
+import communityImage from "@/assets/images/landing-community.webp";
 
 export default function CommunitySection() {
   return (

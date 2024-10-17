@@ -1,3 +1,4 @@
+// Importing atoms components
 import FooterButton from "../atoms/FooterButton";
 
 export default function FooterLinks() {

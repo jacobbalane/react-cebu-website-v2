@@ -1,4 +1,7 @@
+// Importing React
 import React from "react";
+
+// Importing custom components
 import Socials from "./Socials";
 
 export default function Copyright() {

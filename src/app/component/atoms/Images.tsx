@@ -1,6 +1,8 @@
+// Importing React and Next.js components
 import React from "react";
 import Image from "next/image";
 
+// Importing images
 import image1 from "@/assets/images/landing-group-1.webp";
 import image2 from "@/assets/images/landing-group-2.webp";
 import image3 from "@/assets/images/landing-group-3.webp";

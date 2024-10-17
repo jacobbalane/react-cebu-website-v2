@@ -1,3 +1,4 @@
+// Importing React type for defining children nodes
 import { ReactNode } from "react";
 
 interface SectionLayoutProps {

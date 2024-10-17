@@ -1,8 +1,15 @@
-import SectionLayout from "../layouts/SectionLayout";
-import Button from "../atoms/Button";
+// Importing Next.js components
 import Image from "next/image";
-import image from "@/assets/images/event-background.webp";
+
+// Importing atom components
+import Button from "../atoms/Button";
 import SectionText from "../atoms/SectionText";
+
+// Importing layout component
+import SectionLayout from "../layouts/SectionLayout";
+
+// Importing images
+import image from "@/assets/images/event-background.webp";
 
 export default function EventSection() {
   return (

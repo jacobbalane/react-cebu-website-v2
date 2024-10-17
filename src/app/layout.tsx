@@ -1,8 +1,17 @@
+// Importing Next.js types
 import type { Metadata } from "next";
+
+// Importing Next.js font
 import localFont from "next/font/local";
+
+// Importing global styles
 import "./globals.css";
+
+// Importing organism components
 import Header from "./component/organisms/Header";
 import Footer from "./component/organisms/Footer";
+
+// Importing molecule components
 import MobileMenu from "./component/molecules/MobileMenu";
 
 const outfitRegular = localFont({

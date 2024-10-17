@@ -1,14 +1,21 @@
-"use client";
+"use client"; // Enabling client-side rendering
 
-import React from "react";
-import Button from "../atoms/Button";
+// Importing Next.js components
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+// Importing React
+import React from "react";
+
+// Importing custom scripts
 import {
   hideMenu,
   showFooterInfo,
   hideFooterInfo,
 } from "@/app/scripts/scripts";
-import { useRouter } from "next/navigation";
+
+// Importing atom components
+import Button from "../atoms/Button";
 
 export default function MobileMenu() {
   const links = ["home", "about", "events", "connect"];

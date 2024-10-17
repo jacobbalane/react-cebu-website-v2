@@ -1,11 +1,14 @@
-"use client";
+"use client"; // Enabling client-side rendering
 
+// Importing Next.js components
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { showFooterInfo, hideFooterInfo } from "@/app/scripts/scripts";
-
+// Importing React Icons
 import { MdArrowOutward } from "react-icons/md";
+
+// Importing custom scripts
+import { showFooterInfo, hideFooterInfo } from "@/app/scripts/scripts";
 
 interface ButtonProps {
   readonly text: string;

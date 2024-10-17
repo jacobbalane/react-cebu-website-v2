@@ -1,4 +1,7 @@
+// Importing layout component
 import SectionLayout from "../component/layouts/SectionLayout";
+
+// Importing molecule components
 import CallToAction from "../component/molecules/CallToAction";
 
 export default function Events() {

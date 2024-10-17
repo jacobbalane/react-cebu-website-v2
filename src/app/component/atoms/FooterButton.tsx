@@ -1,3 +1,4 @@
+// Importing React icon
 import { MdArrowOutward } from "react-icons/md";
 
 interface LinkProps {

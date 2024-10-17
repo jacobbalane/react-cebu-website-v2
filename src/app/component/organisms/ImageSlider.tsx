@@ -1,3 +1,4 @@
+// Importing atom components
 import Images from "../atoms/Images";
 
 export default function ImageSlider() {

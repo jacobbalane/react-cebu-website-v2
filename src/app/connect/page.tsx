@@ -1,11 +1,22 @@
+// Importing Next.js components
 import Image from "next/image";
+
+// Importing atom components
 import Button from "../component/atoms/Button";
 import SectionText from "../component/atoms/SectionText";
-import SectionLayout from "../component/layouts/SectionLayout";
+
+// Importing molecule components
 import CallToAction from "../component/molecules/CallToAction";
-import { MdArrowOutward } from "react-icons/md";
-import reactIcon from "@/assets/images/react-icon.webp";
 import Socials from "../component/molecules/Socials";
+
+// Importing layout component
+import SectionLayout from "../component/layouts/SectionLayout";
+
+// Importing icon components
+import { MdArrowOutward } from "react-icons/md";
+
+// Importing images
+import reactIcon from "@/assets/images/react-icon.webp";
 
 export default function Connect() {
   return (

@@ -1,15 +1,23 @@
-"use client";
+"use client"; // Enabling client-side rendering
 
-import React from "react";
+// Importing Next.js components
 import Image from "next/image";
 import Link from "next/link";
 
+// Importing React
+import React from "react";
+
+// Importing custom scripts
 import { showMenu, hideMenu } from "@/app/scripts/scripts";
 
+// Importing atom components
 import Button from "../atoms/Button";
 import NavButton from "../atoms/NavButton";
 
+// Importing images
 import logo from "@/assets/logo/react-cebu-logo.webp";
+
+// Importing icon components
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";

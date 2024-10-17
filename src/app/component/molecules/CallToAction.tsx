@@ -1,5 +1,10 @@
+// Importing React
 import React from "react";
+
+// Importing from layouts
 import SectionLayout from "../layouts/SectionLayout";
+
+// Importing from atoms
 import Button from "../atoms/Button";
 import SectionText from "../atoms/SectionText";
 

@@ -1,16 +1,22 @@
+// Importing Next.js components
 import Image from "next/image";
-import SectionLayout from "../component/layouts/SectionLayout";
-import CallToAction from "../component/molecules/CallToAction";
 
-import HeroSectionImage from "@/assets/images/about-hero.webp";
+// Importing layout component
+import SectionLayout from "../component/layouts/SectionLayout";
+
+// Importing molecule components
+import CallToAction from "../component/molecules/CallToAction";
 import AboutInfoSection from "../component/molecules/AboutInfoSection";
 
+// Importing atom component
+import SectionText from "../component/atoms/SectionText";
+
+// Importing images
+import HeroSectionImage from "@/assets/images/about-hero.webp";
 import MissionImage from "@/assets/images/about-our-mission.webp";
 import DeveloperImage1 from "@/assets/images/about-developer-growth-1.webp";
 import DeveloperImage2 from "@/assets/images/about-developer-growth-2.webp";
 import CutoutImage from "@/assets/images/group-cutout.webp";
-
-import SectionText from "../component/atoms/SectionText";
 
 export default function About() {
   return (

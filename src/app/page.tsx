@@ -1,7 +1,10 @@
+// Importing organism components
 import Hero from "./component/organisms/Hero";
 import AboutSection from "./component/organisms/AboutSection";
 import EventSection from "./component/organisms/EventSection";
 import ImageSlider from "./component/organisms/ImageSlider";
+
+// Importing molecule components
 import CallToAction from "./component/molecules/CallToAction";
 
 export default function Home() {

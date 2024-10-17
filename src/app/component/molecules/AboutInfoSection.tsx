@@ -1,7 +1,12 @@
+// Importing Next.js components and types
+import Image, { StaticImageData } from "next/image";
+
+// Importing React
 import React from "react";
+
+// Importing custom components
 import SectionLayout from "../layouts/SectionLayout";
 import SectionText from "../atoms/SectionText";
-import Image, { StaticImageData } from "next/image";
 
 interface AboutInfoSectionProps {
   readonly title: string;
