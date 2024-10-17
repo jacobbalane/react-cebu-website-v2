@@ -25,6 +25,16 @@ export default function MobileMenu() {
 
   useEffect(() => {
     highlightLastActiveButtons();
+
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("activeNavIndex");
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, []);
 
   function handleClick(

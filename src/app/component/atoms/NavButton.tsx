@@ -23,6 +23,16 @@ export default function NavButton({ text, index = 0 }: NavButtonProps) {
 
   useEffect(() => {
     highlightLastActiveButtons();
+
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("activeNavIndex");
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, []);
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
