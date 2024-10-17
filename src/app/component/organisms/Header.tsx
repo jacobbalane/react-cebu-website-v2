@@ -30,7 +30,12 @@ export default function Header() {
       <div className="flex justify-between items-center h-24 md:h-36 md:max-w-mdMaxW lg:max-w-lgMaxW px-8 mx-auto">
         {/* Logo on the Left */}
         <Link href="/" className="md:w-52">
-          <Image src={logo} alt="Logo" priority={true} className="w-10" />
+          <Image
+            src={logo}
+            alt="Logo"
+            priority={true}
+            className="w-10 select-none"
+          />
         </Link>
 
         {/* Centered Links */}

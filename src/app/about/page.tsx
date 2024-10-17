@@ -31,7 +31,7 @@ export default function About() {
             src={HeroSectionImage}
             alt="Community Group Photo"
             priority={true}
-            className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover"
+            className="h-40 md:h-[30rem] rounded-md border-2 border-foreground object-cover select-none"
           />
         </div>
       </SectionLayout>
@@ -61,7 +61,7 @@ export default function About() {
         src={CutoutImage}
         alt="Community Group Photo"
         priority={true}
-        className="w-full md:mt-40"
+        className="w-full md:mt-40 select-none"
       />
       <CallToAction
         title="Upcoming Events"

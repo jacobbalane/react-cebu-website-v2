@@ -26,7 +26,7 @@ export default function Hero() {
                 type="text"
                 placeholder="Your Email Address"
                 className="
-               lg:w-96 z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg md:w-2/3"
+               lg:w-96 z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg md:w-2/3 select-none"
               />
               <div className="md:1/3">
                 <Button text="Join Newsletter" link="home" accent={true} />
@@ -39,13 +39,13 @@ export default function Hero() {
         src={groupCutout}
         alt="group photo"
         priority={true}
-        className="absolute bottom-0 z-20"
+        className="absolute bottom-0 z-20 select-none"
       />
       <Image
         src={reactIcon}
         alt="react icon"
         priority={true}
-        className="absolute -bottom-14 md:-bottom-40 lg:-bottom-1/3 z-0 w-2/3 xl:w-7/12 opacity-10 animate-spin-slow"
+        className="absolute -bottom-14 md:-bottom-40 lg:-bottom-1/3 z-0 w-2/3 xl:w-7/12 opacity-10 animate-spin-slow select-none"
       />
     </section>
   );

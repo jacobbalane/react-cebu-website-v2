@@ -18,7 +18,7 @@ export default function EventSection() {
         src={image}
         alt="Event Section Background"
         priority={true}
-        className="absolute bottom-0 object-cover h-full w-full opacity-10"
+        className="absolute bottom-0 object-cover h-full w-full opacity-10 select-none"
       />
       <SectionLayout>
         <div className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10">

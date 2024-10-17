@@ -44,7 +44,7 @@ export default function AboutInfoSection({
                 src={image}
                 alt="Community Group Photo"
                 loading="lazy"
-                className={`h-60 md:h-72 md:w-4/5 rounded-md border-2 border-foreground object-cover md:absolute  ${
+                className={`h-60 md:h-72 md:w-4/5 rounded-md border-2 border-foreground object-cover md:absolute select-none  ${
                   index === images.length - 1
                     ? "hidden md:block top-0 right-0"
                     : "md:bottom-0 md:left-0 z-10"
@@ -56,7 +56,7 @@ export default function AboutInfoSection({
               src={images}
               alt="Community Group Photo"
               loading="lazy"
-              className="h-60 md:h-full w-full rounded-md border-2 border-foreground object-cover"
+              className="h-60 md:h-full w-full rounded-md border-2 border-foreground object-cover select-none"
             />
           )}
         </div>

@@ -49,7 +49,7 @@ export default function NavButton({ text, index = 0 }: NavButtonProps) {
     <Link
       href="/"
       onClick={handleClick}
-      className="font-outfitRegular lg:text-lg capitalize nav-button">
+      className="font-outfitRegular lg:text-lg capitalize nav-button select-none">
       {text}
     </Link>
   );

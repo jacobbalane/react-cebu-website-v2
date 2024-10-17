@@ -37,7 +37,7 @@ export default function Connect() {
                   <input
                     type="text"
                     placeholder="Your Email Address"
-                    className="md:w-full z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg"
+                    className="md:w-full z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg select-none"
                   />
                   <div className="w-full flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
                     <div className="md:w-1/2">
@@ -45,7 +45,7 @@ export default function Connect() {
                     </div>
                     <a
                       href="mailto: react@jscebu.org"
-                      className="md:w-1/2 flex justify-center items-center z-10 px-8 py-3 rounded-md font-outfitMedium md:text-xl lg:text-2xl text-accent-2 bg-accent-1 border-2 border-foreground">
+                      className="md:w-1/2 flex justify-center items-center z-10 px-8 py-3 rounded-md font-outfitMedium md:text-xl lg:text-2xl text-accent-2 bg-accent-1 border-2 border-foreground select-none">
                       Send us an email
                       <MdArrowOutward className=" text-lg ml-2" />
                     </a>
