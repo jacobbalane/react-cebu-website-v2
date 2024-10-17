@@ -46,16 +46,18 @@ export default function About() {
         images={[DeveloperImage1, DeveloperImage2]}
         multipleImages={true}
       />
-      <SectionLayout
-        removeDefaultPaddingY={true}
-        fitHeight={true}
-        reducePaddingY={true}>
-        <SectionText
-          title="The Power of Community"
-          description="We believe in the importance of community—finding your tribe to support, grow, and learn together. That’s what React Cebu is all about."
-          alignCenterOnLargeScreen={true}
-        />
-      </SectionLayout>
+      <div data-aos="fade">
+        <SectionLayout
+          removeDefaultPaddingY={true}
+          fitHeight={true}
+          reducePaddingY={true}>
+          <SectionText
+            title="The Power of Community"
+            description="We believe in the importance of community—finding your tribe to support, grow, and learn together. That’s what React Cebu is all about."
+            alignCenterOnLargeScreen={true}
+          />
+        </SectionLayout>
+      </div>
 
       <Image
         src={CutoutImage}

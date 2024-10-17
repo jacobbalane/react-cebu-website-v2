@@ -21,7 +21,9 @@ export default function EventSection() {
         className="absolute bottom-0 object-cover h-full w-full opacity-10 select-none"
       />
       <SectionLayout>
-        <div className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10">
+        <div
+          className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10"
+          data-aos="fade-up">
           <SectionText
             title="Join Us at Our Upcoming Events"
             description="Join us as we bring passion to every event. Connect, learn, and grow with us."

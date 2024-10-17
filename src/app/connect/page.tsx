@@ -25,7 +25,7 @@ export default function Connect() {
         <SectionLayout removeDefaultPaddingY={true}>
           <div className=" flex flex-col items-center md:justify-center h-full space-y-14 md:space-y-20 min-h-fit pt-12 md:pt-0">
             <div className="flex flex-col items-center space-y-8 md:space-y-12">
-              <div className="flex-none h-fit md:max-w-[55rem]">
+              <div className="flex-none h-fit md:max-w-[55rem]" data-aos="fade">
                 <SectionText
                   title="Let’s Connect"
                   description="Have questions or ideas? Reach out, and let's connect to explore how we can collaborate and create something great together!"
@@ -37,7 +37,7 @@ export default function Connect() {
                   <input
                     type="text"
                     placeholder="Your Email Address"
-                    className="md:w-full z-10 border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg select-none"
+                    className="md:w-full z-10 bg-background border-2 border-foreground rounded-md font-outfitRegular px-5 py-3 lg:text-lg select-none"
                   />
                   <div className="w-full flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
                     <div className="md:w-1/2">

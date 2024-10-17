@@ -29,7 +29,8 @@ export default function AboutInfoSection({
       <div
         className={`flex flex-col ${
           multipleImages ? "md:flex-row-reverse" : "md:flex-row"
-        } space-y-8 md:space-y-0  w-full`}>
+        } space-y-8 md:space-y-0  w-full`}
+        data-aos="fade-up">
         <div
           className={`md:w-1/2 my-auto ${
             multipleImages ? "md:pl-16" : "md:md:pr-16"
