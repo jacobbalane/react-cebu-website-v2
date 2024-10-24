@@ -34,7 +34,7 @@ export default function Header() {
             src={logo}
             alt="Logo"
             priority={true}
-            className="w-10 select-none"
+            className="w-10 md:w-16 select-none"
           />
         </Link>
 

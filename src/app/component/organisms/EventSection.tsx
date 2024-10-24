@@ -23,7 +23,7 @@ export default function EventSection() {
       <SectionLayout>
         <div
           className="relative flex flex-col items-center justify-center h-full space-y-8 md:space-y-20 z-10"
-          data-aos="fade-up">
+          data-aos="zoom-in">
           <SectionText
             title="Join Us at Our Upcoming Events"
             description="Join us as we bring passion to every event. Connect, learn, and grow with us."

@@ -4,6 +4,7 @@ interface SectionTextProps {
   readonly alignCenterOnSmallScreen?: boolean;
   readonly alignCenterOnLargeScreen?: boolean;
   readonly limitDescriptionWidth?: boolean;
+  readonly titleHighlight?: string;
 }
 
 export default function SectionText({
@@ -12,6 +13,7 @@ export default function SectionText({
   alignCenterOnSmallScreen = false,
   alignCenterOnLargeScreen = false,
   limitDescriptionWidth = false,
+  titleHighlight = "",
 }: SectionTextProps) {
   return (
     <div className="flex flex-col space-y-4 md:space-y-10">
@@ -19,7 +21,7 @@ export default function SectionText({
         className={`text-3xl md:text-5xl lg:text-7xl font-outfitBold ${
           alignCenterOnSmallScreen ? "text-center" : ""
         } ${alignCenterOnLargeScreen ? "md:text-center" : ""}`}>
-        {title}
+        {title + " "} <span className="text-accent-1">{titleHighlight}</span>
       </p>
 
       <p

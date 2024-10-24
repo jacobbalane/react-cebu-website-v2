@@ -76,3 +76,46 @@ export function highlightLastActiveButtons() {
     setActiveNavButton(0);
   }
 }
+
+export function getDate(date) {
+  return new Date(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    weekday: "short",
+  });
+}
+
+export function getTime(time) {
+  return (
+    time &&
+    new Date(time).toLocaleTimeString("en-US", {
+      hour12: true,
+      hour: "numeric",
+      minute: "numeric",
+    })
+  );
+}
+
+export function getEventStatus(start_time, end_time) {
+  const current_time = new Date();
+  if (!end_time) {
+    end_time = new Date(
+      start_time.getFullYear(),
+      start_time.getMonth(),
+      start_time.getDate(),
+      11,
+      59,
+      59
+    );
+  }
+  if (current_time.getTime() > end_time.getTime()) {
+    return "past";
+  } else if (
+    current_time.getTime() >= end_time.getTime() &&
+    current_time.getTime() <= end_time.getTime()
+  ) {
+    return "ongoing";
+  } else {
+    return "upcoming";
+  }
+}
