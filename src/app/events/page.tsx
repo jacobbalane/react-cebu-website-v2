@@ -130,11 +130,17 @@ export default function Events() {
           </div>
           <div className=" flex flex-col">
             <p className="font-outfitBold text-xl my-8">Our Past Events</p>
-            <div className="space-y-4">
-              {pastEvents?.map((event) => (
-                <EventInstance key={event.id} data={event} />
-              ))}
-            </div>
+            {pastEvents.length > 0 ? (
+              <div className="space-y-4">
+                {pastEvents?.map((event) => (
+                  <EventInstance key={event.id} data={event} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-xl font-outfitMedium leading-tight">
+                No past events yet. Stay tuned for more exciting events! 🎉
+              </div>
+            )}
           </div>
         </div>
       </SectionLayout>
