@@ -33,18 +33,15 @@ export default function Button({
   const navs = ["home", "events", "about", "connect"];
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>, text: string) {
-    if (navs.includes(text)) {
-      e.preventDefault();
-      if (text === "connect") {
-        hideFooterInfo();
-      } else {
-        showFooterInfo();
-      }
-      setActiveNavButton(index);
-      router.push(text === "home" ? "/" : `/${text}`);
+    e.preventDefault();
+    if (navs.includes(text)) text = "/" + text;
+    if (text === "/connect") {
+      hideFooterInfo();
     } else {
-      window.open(link, "_blank");
+      showFooterInfo();
     }
+    setActiveNavButton(index);
+    router.push(text === "home" ? "/" : `${text}`);
   }
 
   return (
