@@ -41,14 +41,20 @@ export default function EventInstance({
   const timeEnd = getTime(end_time);
 
   return (
-    <div className=" flex flex-col border-2 border-foreground rounded-md shadow-md">
-      <div className="relative">
+    <div
+      className=" flex flex-col md:flex-row border-2 border-foreground rounded-md shadow-md transition-all delay-75 hover:scale-[1.05]"
+      data-aos="zoom-up"
+      data-aos-offset="50">
+      <div
+        className={`relative md:w-2/5 ${
+          eventStatus !== "ongoing" ? "lg:w-1/5" : "lg:w-1/3"
+        }`}>
         <Image
           src={cover_photo}
           alt={name}
           width={200}
           height={100}
-          className="w-full h-40 rounded-t border-b-2 border-foreground object-cover"
+          className="w-full h-40 md:h-full rounded-t md:rounded-tr-none md:rounded-l border-b-2 md:border-b-0 md:border-r-2 border-foreground object-cover"
           priority={true}
         />
         {eventStatus === "ongoing" && (
@@ -57,21 +63,32 @@ export default function EventInstance({
           </div>
         )}
       </div>
-      <div className="grow rounded-b p-8 font-outfitRegular space-y-5 text-sm">
-        <p className="font-outfitBold leading-tight">{name}</p>
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <p>{date}</p>
-            <BsDot className="mx-1" />
-            <p>{timeEnd ? `${timeStart} - ${timeEnd}` : timeStart}</p>
+      <div
+        className={`flex flex-col ${
+          eventStatus !== "ongoing"
+            ? "lg:flex-row lg:w-4/5 lg:space-x-14 items-center"
+            : "lg:w-2/3"
+        } md:items-end md:w-3/5 rounded-b p-8 font-outfitRegular space-y-5 md:space-y-7 text-sm md:text-lg`}>
+        <div className="flex flex-col space-y-3 md:space-y-5 w-full">
+          <p className="font-outfitBold leading-tight text-lg md:text-2xl w-full">
+            {name}
+          </p>
+          <div className="flex flex-col w-full">
+            <div className="flex items-center">
+              <p>{date}</p>
+              <BsDot className="mx-1" />
+              <p>{timeEnd ? `${timeStart} - ${timeEnd}` : timeStart}</p>
+            </div>
+            <p>{location}</p>
           </div>
-          <p>{location}</p>
         </div>
-        <Button
-          text="Event Page"
-          link={`https://www.facebook.com/events/${source_id}`}
-          accent={accent}
-        />
+        <div className="w-full md:w-2/3 h-full flex items-center">
+          <Button
+            text="Event Page"
+            link={`https://www.facebook.com/events/${source_id}`}
+            accent={accent}
+          />
+        </div>
       </div>
     </div>
   );

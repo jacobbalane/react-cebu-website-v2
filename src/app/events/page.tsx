@@ -95,32 +95,32 @@ export default function Events() {
   return (
     <>
       <SectionLayout fitHeight={true} reducePaddingY={true}>
-        <div className="space-y-12">
-          <div className="flex flex-col space-y-2">
-            <p className="font-outfitBold text-2xl">
+        <div className="space-y-12 md:w-[40rem] lg:w-[60rem]">
+          <div className="flex flex-col md:items-center space-y-2 md:space-y-6">
+            <p className="font-outfitBold text-3xl md:text-5xl lg:text-6xl">
               React Cebu <span className="text-accent-1">Events</span>
             </p>
-            <p className="font-outfitRegular text-lg leading-tight">
+            <p className="font-outfitRegular text-lg md:text-2xl leading-tight">
               Join us for exciting workshops, meetups, and webinars!
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 md:space-y-8 lg:space-y-12">
             {ongoingEvents.length > 0 ? (
-              <div className="space-y-4">
+              <div className="space-y-4 md:space-y-8 lg:space-y-12 w-full">
                 {ongoingEvents?.map((event) => (
                   <EventInstance key={event.id} data={event} accent={true} />
                 ))}
               </div>
             ) : (
-              <div className="text-xl font-outfitMedium leading-tight">
-                🚀 No upcoming events at the moment, but don’t worry! 🎉 Check
-                out our past events to see what we’ve been up to. Explore and
-                get inspired!
+              <div className="text-xl md:text-3xl lg:text-4xl w-full font-outfitMedium leading-tight md:text-center">
+                No upcoming events at the moment, but don’t worry! 🎉 Check out
+                our past events to see what we’ve been up to. Explore and get
+                inspired!
               </div>
             )}
             {upcomingEvents.length > 0 && (
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-col space-y-4 md:space-y-8 lg:space-y-12 w-full">
                 <Upnext />
                 {upcomingEvents?.map((event) => (
                   <EventInstance key={event.id} data={event} />
@@ -128,16 +128,18 @@ export default function Events() {
               </div>
             )}
           </div>
-          <div className=" flex flex-col">
-            <p className="font-outfitBold text-xl my-8">Our Past Events</p>
+          <div className=" flex flex-col md:items-center lg:w-[50rem] mx-auto">
+            <p className="font-outfitBold text-2xl md:text-4xl lg:text-5xl my-8 md:my-12">
+              Our Past Events
+            </p>
             {pastEvents.length > 0 ? (
-              <div className="space-y-4">
+              <div className="space-y-4 md:space-y-8 w-full">
                 {pastEvents?.map((event) => (
                   <EventInstance key={event.id} data={event} />
                 ))}
               </div>
             ) : (
-              <div className="text-xl font-outfitMedium leading-tight">
+              <div className="text-xl md:text-3xl lg:text-4xl w-full font-outfitMedium leading-tight md:text-center">
                 No past events yet. Stay tuned for more exciting events! 🎉
               </div>
             )}
