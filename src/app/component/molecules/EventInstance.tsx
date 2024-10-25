@@ -12,6 +12,7 @@ import { getDate, getTime } from "../../scripts/scripts";
 
 interface Event {
   readonly accent?: boolean;
+  readonly highlightEvent?: boolean;
   readonly data: {
     id: number;
     name: string;
@@ -26,6 +27,7 @@ interface Event {
 
 export default function EventInstance({
   accent = false,
+  highlightEvent = false,
   data: {
     name,
     start_time,
@@ -47,7 +49,7 @@ export default function EventInstance({
       data-aos-offset="50">
       <div
         className={`relative md:w-2/5 ${
-          eventStatus !== "ongoing" ? "lg:w-1/5" : "lg:w-1/3"
+          !highlightEvent ? "lg:w-1/5" : "lg:w-1/3"
         }`}>
         <Image
           src={cover_photo}
@@ -65,7 +67,7 @@ export default function EventInstance({
       </div>
       <div
         className={`flex flex-col ${
-          eventStatus !== "ongoing"
+          !highlightEvent
             ? "lg:flex-row lg:w-4/5 lg:space-x-14 items-center"
             : "lg:w-2/3"
         } md:items-end md:w-3/5 rounded-b p-8 font-outfitRegular space-y-5 md:space-y-7 text-sm md:text-lg`}>
