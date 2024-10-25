@@ -2,7 +2,7 @@
 
 ## Design Link
 
-You can access the website figma design [here](https://www.figma.com/design/H9hFoDzplQNup6vPZDIBgd/react-cebu?node-id=0-1&node-type=canvas&t=C9UAj9UZk49JBmR8-0).
+You can access the website's figma design [here](https://www.figma.com/design/H9hFoDzplQNup6vPZDIBgd/react-cebu?node-id=0-1&node-type=canvas&t=C9UAj9UZk49JBmR8-0).
 
 ## Getting Started
 
