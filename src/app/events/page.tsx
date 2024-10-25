@@ -109,7 +109,12 @@ export default function Events() {
             {ongoingEvents.length > 0 ? (
               <div className="space-y-4 md:space-y-8 lg:space-y-12 w-full">
                 {ongoingEvents?.map((event) => (
-                  <EventInstance key={event.id} data={event} accent={true} />
+                  <EventInstance
+                    key={event.id}
+                    data={event}
+                    accent={true}
+                    highlightEvent={true}
+                  />
                 ))}
               </div>
             ) : (
