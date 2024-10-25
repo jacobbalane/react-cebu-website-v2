@@ -8,7 +8,20 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/jacobbalane/react-cebu-website-v2.git
+cd react-cebu-website-v2
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -22,21 +35,44 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribute to the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We welcome contributions to improve the React Cebu website! Here's how you can get involved:
 
-## Learn More
+1. Fork the Repository:
+- Click the 'Fork' button on the top right to create a copy of the repository on your GitHub account.
 
-To learn more about Next.js, take a look at the following resources:
+2. Create a New Branch:
+- Make sure you're on your forked repository, then create a new branch for your changes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git checkout -b feature/your-feature-name
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Make Your Changes:
+- Implement your changes, add new features, or fix bugs.
 
-## Deploy on Vercel
+4. Commit Your Changes:
+- Write a meaningful commit message to describe your changes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git commit -m "Add detailed description of your changes"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Push Your Changes:
+- Push the changes to your forked repository.
+
+```bash
+git push origin feature/your-feature-name
+```
+
+6. Open a Pull Request (PR):
+- Go to the original repository and open a Pull Request. Provide a detailed description of your changes and link to any related issues.
+
+## Reporting Issues
+
+If you find any bugs or have suggestions, please create an issue [here](https://github.com/jacobbalane/react-cebu-website-v2/issues). Make sure to provide as much information as possible.
+
+## Happy Coding!
+
+We appreciate your contributions and support! 🎉 Feel free to reach out if you have any questions, and let's build something amazing together. Happy coding!
